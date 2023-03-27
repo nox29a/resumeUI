@@ -6,11 +6,11 @@ const Hero = () => {
   <div className='container mx-auto flex flex-col justify-center'>
     <div className='absolute font-semibold flex items-center uppercase'>
       <h1 className='text-[70px] leading-[1.1] font-light'> 
-      <span className='font-semibold'>
+      <span data-aos="zoom-out-down" className='font-semibold'>
       Adamczyk Łukasz<br />
       </span> 
-      <span className='text-[60px] text-purple-700'>Frontend Developer<br /></span>
-      <span className='text-[50px] '>
+      <span data-aos="zoom-out-right" className='text-[60px] text-purple-700'>Frontend Developer<br /></span>
+      <span data-aos="zoom-in-left" className='text-[50px] '>
       Open to work
       </span></h1>
     </div>

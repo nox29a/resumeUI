@@ -1,15 +1,17 @@
 import React, {useContext} from 'react';
 import Github from '../img/25231.png';
 import Vercel from '../img/25331.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Portfolio = () => {
   return (
 <div id='Projects' className='grid place-items-center pt-32'>
   <div className='container mx-auto md:mx-0'>
-    <h1 className='text-[90px] text-center p-8 gap-'>Portfolio</h1>
+    <h1 data-aos="flip-down" className='text-[90px] text-center p-8 gap-'>Portfolio</h1>
     <div className='text-lg grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-40 justify-center'>
     {/* FIRST CARD */}
-      <div className='group w-96 h-[500px] [perspective:1000px]'>
+      <div  data-aos="flip-right" className='group w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center  mb-8'>Ecommerce Shop</h1>
@@ -35,7 +37,7 @@ const Portfolio = () => {
           </div>
         </div>
     {/* SECOND CARD */}
-        <div className='group w-96 h-[500px] [perspective:1000px]'>
+      <div data-aos="flip-right" className='group w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center mb-8'>Countdown site</h1>
@@ -60,7 +62,7 @@ const Portfolio = () => {
           </div>
         </div>  
     {/* THIRD CARD */}
-      <div className='group w-96 h-[500px] [perspective:1000px]'>
+      <div data-aos="flip-left" className='group w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center mb-8'>Add user form</h1>
@@ -87,7 +89,7 @@ const Portfolio = () => {
           </div>
         </div>
     {/* FOUR CARD */}
-      <div className='group w-96 h-[500px] [perspective:1000px]'>
+      <div data-aos="flip-left" className='group w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center  mb-8'>My design <br />portfolio site</h1>
@@ -103,7 +105,8 @@ const Portfolio = () => {
                   <div className='pt-10 text-black'>
                   This is my first made portfolio website, now with my more creative projects about videos, photos and images. <br /></div>
                   <div className='flex flex-row justify-center mt-10'>
-                    <a href="https://github.com/nox29a/reactnativeform"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://github.com/nox29a/cv"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://nox29a.pythonanywhere.com/"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
                   </div>
                 </div>
               </div>
