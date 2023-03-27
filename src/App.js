@@ -18,8 +18,6 @@ const App = () => {
     <Certification />
     <Contact />
     <Footer />
-
-  
   </div>;
 };
 
