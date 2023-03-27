@@ -1,37 +1,24 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { SidebarContext } from '../contexts/SidebarContext';
-import {BsBag} from 'react-icons/bs';
-import { CartContext } from '../contexts/CartContext';
-import { Link } from 'react-router-dom';
-import Logo from '../img/logo.png';
+import React from 'react';
+import HeroImg from '../img/hero.png';
 const Header = () => {
-  const [ isActive, setIsActive ] = useState(true);
-  const { isOpen, setIsOpen} = useContext(SidebarContext);
-  const { itemAmount } = useContext(CartContext); 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        setIsActive(true);
-      } else {
-        setIsActive(false);
-      }
-    })});
   return (
-    
-    <header className={`${ isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
-    <div className='container mx-auto flex items-center justify-between h-full'>
-  
-    <Link to="/"> 
-      <div>
-        <img className='w-[50px] border-double border-4 border-blue-500 shadow-2xl hover:border-dotted' src={Logo} alt="logo" />
+    <header className=' bg-herohead py-6 fixed w-full z-10 border-b-8 border-purple-800'>
+      <div className='container mx-auto flex items-center justify-between h-full'>
+        <div className='cursor-pointer' >
+          <a href='#Hero'>
+          <img className=' flex max-w-[50px] max-h-[50px]' src={HeroImg} alt="hero"></img></a>
+        </div>
+          <div className='flex flex-row '>
+            <div className='mx-2 text-2xl p-2 border-2 border-purple-800 bg-purple-200 rounded-lg bg-opacity-60 cursor-pointer' >
+            <a href='#About'>About Me</a></div>
+            <div className='mx-2 text-2xl p-2 border-2 border-purple-800 bg-purple-200 rounded-lg bg-opacity-60 cursor-pointer' >
+            <a href='#skill'>Skills</a></div>
+            <div className='mx-2 text-2xl p-2 border-2 border-purple-800 bg-purple-200 rounded-lg bg-opacity-60 cursor-pointer' >
+            <a href='#Projects'>Projects</a></div>
+            <div className='mx-2 text-2xl p-2 border-2 border-purple-800 bg-purple-200 rounded-lg bg-opacity-60 cursor-pointer' >
+            <a href='#Certification'>Certifications</a></div>
+          </div>    
       </div>
-    </Link>
-
-  <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer  flex relative' >
-<BsBag className='text-2xl' />  
-    <div className='bg-blue-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full justify-center items-center flex'>{itemAmount}</div>
-  </div>
-  </div>
   </header>
   ); 
 };

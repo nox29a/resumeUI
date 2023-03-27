@@ -1,25 +1,24 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
-import Home from './pages/Home';
-import ProductDetails from './pages/ProductDetails';
-
-import Sidebar from './components/Sidebar';
+import About from './components/About';
 import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Certification from './components/Certification';
 import Footer from './components/Footer';
-
+import Hero from './components/Hero';
+import Skills from './components/Skills';
 
 const App = () => {
   return <div className='overflow-hidden'>
-    <Router>
     <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product/:id' element={<ProductDetails />} />
-      </Routes>
-      <Sidebar />
-      <Footer />
-    </Router>
+    <Hero />
+    <About />
+    <Skills />
+    <Portfolio />
+    <Certification />
+    <Contact />
+    <Footer />
+
   
   </div>;
 };
