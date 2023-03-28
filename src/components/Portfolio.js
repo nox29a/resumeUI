@@ -8,10 +8,10 @@ const Portfolio = () => {
   return (
 <div id='Projects' className='grid place-items-center pt-32'>
   <div className='container mx-auto md:mx-0'>
-    <h1 data-aos="flip-down" className='text-[90px] text-center p-8 gap-'>Portfolio</h1>
+    <h1 data-aos="flip-down" className='text-[70px] sm:text-[90px] text-center p-8 gap-4'>Portfolio</h1>
     <div className='text-lg grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-40 justify-center'>
     {/* FIRST CARD */}
-      <div  data-aos="flip-right" className='group w-96 h-[500px] [perspective:1000px]'>
+      <div  data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center  mb-8'>Ecommerce Shop</h1>
@@ -37,7 +37,7 @@ const Portfolio = () => {
           </div>
         </div>
     {/* SECOND CARD */}
-      <div data-aos="flip-right" className='group w-96 h-[500px] [perspective:1000px]'>
+      <div data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center mb-8'>Countdown site</h1>
@@ -62,7 +62,7 @@ const Portfolio = () => {
           </div>
         </div>  
     {/* THIRD CARD */}
-      <div data-aos="flip-left" className='group w-96 h-[500px] [perspective:1000px]'>
+      <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center mb-8'>Add user form</h1>
@@ -89,8 +89,8 @@ const Portfolio = () => {
           </div>
         </div>
     {/* FOUR CARD */}
-      <div data-aos="flip-left" className='group w-96 h-[500px] [perspective:1000px]'>
-          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+      <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
+          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 transform-custom group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center  mb-8'>My design <br />portfolio site</h1>
               <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/djanogsite.PNG" alt=""></img>
@@ -98,13 +98,13 @@ const Portfolio = () => {
                   - Bootstrap <br />
                   - Django <br /></div>
             </div>
-              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
+              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] backface-custom content-auto'> 
                 <div className='flex min-h-full flex-col items-center justify-center'>
                   <h1 className='text-3xl font-bold text-black'>My design portfolio site</h1>
                 <div>
                   <div className='pt-10 text-black'>
                   This is my first made portfolio website, now with my more creative projects about videos, photos and images. <br /></div>
-                  <div className='flex flex-row justify-center mt-10'>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
                     <a href="https://github.com/nox29a/cv"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
                     <a href="https://nox29a.pythonanywhere.com/"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
                   </div>
