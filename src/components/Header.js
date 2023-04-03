@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImg from '../img/hero.png';
 const Header = () => {
   return (
-    <header className=' bg-herohead py-6 fixed w-full z-10 border-b-8 border-purple-800'>
+    <header className=' bg-herohead backdrop-blur-sm py-6 fixed w-full z-10 border-b-8 border-purple-800'>
       <div className='container mx-0 flex items-center justify-between h-full  '>
         <div className='cursor-pointer' >
           <a href='#Hero'>

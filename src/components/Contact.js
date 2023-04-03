@@ -33,8 +33,8 @@ const Contact = () => {
           <p className='mb-4'>You can contact me via mail:</p>
           <p className=' mb-12 text-sm sm:text-2xl lg:96 sm:mx-5 md:mx-32  p-4 bg-purple-400 hover:bg-blue-700 text-white  border-2 border-purple-700 rounded-full'>adamczyk29a@interia.pl</p>
           <p className='mb-4'>My CV:</p>
-          <button className='bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-full mx-2' onClick={()=>{downloadFileAtURL(PDF_RESUME_URL)}}>DOWNLOAD</button>
-          <button className='bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-full mx-2' onClick={()=>{lookAtFileAtURL(PDF_RESUME_URL)}}>VIEW</button>
+          <button className='bg-green-500 hover:bg-blue-700 text-white py-4 px-8 border border-blue-700 rounded-full mx-2 ' onClick={()=>{downloadFileAtURL(PDF_RESUME_URL)}}>DOWNLOAD</button>
+          <button className='bg-green-500 hover:bg-blue-700 text-white py-4 px-8 border border-blue-700 rounded-full mx-2' onClick={()=>{lookAtFileAtURL(PDF_RESUME_URL)}}>VIEW</button>
         </div>
       </div>
     </div>
