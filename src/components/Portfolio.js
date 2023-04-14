@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div className='text-lg grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-40 justify-center'>
     {/* FIRST CARD */}
       <div  data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
-          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center  mb-8'>Ecommerce Shop</h1>
               <img className='' src="http://nox29a.pythonanywhere.com/static/assets/img/0c81d715-48bf-439a-b952-f3b0038eda03.png" alt=""></img>
@@ -38,7 +38,7 @@ const Portfolio = () => {
         </div>
     {/* SECOND CARD */}
       <div data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
-          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
               <h1 className='text-3xl font-bold text-center mb-8'>Countdown site</h1>
               <img className='' src="http://nox29a.pythonanywhere.com/static/assets/img/813e1fa0-bd35-4b0c-b732-f8fb12ecf8b4.png" alt=""></img>
@@ -63,7 +63,7 @@ const Portfolio = () => {
         </div>  
     {/* THIRD CARD */}
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
-          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center mb-8'>Add user form</h1>
               <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/336569946_1374489509992754_7025064824749271534_n.jpg" alt=""></img>
@@ -90,7 +90,7 @@ const Portfolio = () => {
         </div>
     {/* FOUR CARD */}
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
-          <div className='bg-hero h-full border-4 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 transform-custom group-hover:[transform:rotateY(180deg)]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 transform-custom group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
             <h1 className='text-3xl font-bold text-center  mb-8'>My design <br />portfolio site</h1>
               <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/djanogsite.PNG" alt=""></img>
