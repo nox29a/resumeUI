@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Github from '../img/25231.png';
 import Vercel from '../img/25331.png';
 import AOS from 'aos';
