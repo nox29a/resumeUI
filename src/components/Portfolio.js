@@ -1,6 +1,7 @@
 import React from 'react';
 import Github from '../img/25231.png';
 import Vercel from '../img/25331.png';
+import PaintingShop from '../img/paintingshop.PNG';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -65,23 +66,26 @@ const Portfolio = () => {
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-            <h1 className='text-3xl font-bold text-center mb-8'>Add user form</h1>
-              <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/336569946_1374489509992754_7025064824749271534_n.jpg" alt=""></img>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 border-purple-800'>Nowy</div>
+            <h1 className='text-3xl font-bold text-center mb-8'>Paintings shop</h1>
+              <img className='h-[200px] w-full object-cover' src={PaintingShop} alt=""></img>
             <div className='pt-10 text-center'>
-            - ReactNative <br />
-                  - EXPO <br /></div>
+            - React <br />
+            - Stripe <br />
+                  - Strapi <br /></div>
             
             
             </div>
             
               <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
                 <div className='flex min-h-full flex-col items-center justify-center'>
-                  <h1 className='text-3xl font-bold text-black'>Add user form</h1>
+                  <h1 className='text-3xl font-bold text-black'>Paintings shop</h1>
                 <div>
                   <div className='pt-10 text-black'>
-                  This is form where you can add a conctractor i did it for a recruicment process, and have some plans to make full app from it.<br /></div>
-                  <div className='flex flex-row justify-center mt-10'>
-                    <a href="https://github.com/nox29a/reactnativeform"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                  Backend build with strapi, and payment method with stripe.<br /></div>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
+                  <a href="https://github.com/nox29a/mypaintingsshop"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://mypaintingsshop.vercel.app"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
                   </div>
                 </div>
               </div>
