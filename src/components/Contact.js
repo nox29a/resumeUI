@@ -27,8 +27,8 @@ const Contact = () => {
   }
   return (
     <section className="contact-section">
-    <div className='flex place-items-center'>
-      <div className='container'>
+    <div className='place-items-center'>
+      <div >
         <div className='text-[30px] text-center p-8 gap-4 mt-20'>
           <p className='mb-4'>You can contact me via mail:</p>
           <p className=' mb-12 text-sm sm:text-2xl lg:96 sm:mx-5 md:mx-32  p-4 bg-purple-400 hover:bg-blue-700 text-white  border-2 border-purple-700 rounded-full'>adamczyk29a@interia.pl</p>

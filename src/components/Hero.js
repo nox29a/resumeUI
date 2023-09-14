@@ -9,13 +9,13 @@ const Hero = () => {
       <span data-aos="zoom-out-down" className='font-semibold'>
       Adamczyk Łukasz<br />
       </span> 
-      <span data-aos="zoom-out-right" className='text-[40px] sm:text-[60px] text-purple-700'>Frontend Developer<br /></span>
+      <span data-aos="zoom-out-right" className='text-[40px] sm:text-[60px] text-purple-900'>Frontend Developer<br /></span>
       <span data-aos="zoom-in-left" className='text-[30px] sm:text-[50px] '>
       Open to work
       </span></h1>
     </div>
-      <div className='hidden animate-in md:flex-rows lg:flex justify-end'>
-        <img className='max-w-[400px] max-h-[400px]' src={HeroImg} alt="hero"></img>
+    <div className='z-1 animate-in md:flex-rows flex justify-end    mt-96 lg:mt-20'>
+        <img className=' flex max-w-[400px] max-h-[400px] align-bottom rounded-full border-4 border-purple-900' src={HeroImg} alt="hero"></img>
       </div>
   </div>
 </div>

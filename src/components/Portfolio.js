@@ -2,6 +2,8 @@ import React from 'react';
 import Github from '../img/25231.png';
 import Vercel from '../img/25331.png';
 import PaintingShop from '../img/paintingshop.PNG';
+import BorniakShop from '../img/borniakshop.PNG';
+import EditorWebsite from '../img/editorwebsite.PNG';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -11,6 +13,66 @@ const Portfolio = () => {
   <div className='container mx-auto md:mx-0'>
     <h1 data-aos="flip-down" className='text-[70px] sm:text-[90px] text-center p-8 gap-4'>Portfolio</h1>
     <div className='text-lg grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-40 justify-center'>
+        {/* new 1 card CARD */}
+        <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+            <div className='inset-0'>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-yellow-400 border-purple-800'>Nowy</div>
+            <h1 className='text-3xl font-bold text-center mb-8'>Project for client</h1>
+              <img className='h-[200px] w-full object-cover' src={BorniakShop} alt=""></img>
+            <div className='pt-10 text-center'>
+            - React <br />
+            - FakeStoreApi <br />
+                  - Tailwind CSS <br /></div>
+            
+            
+            </div>
+            
+              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
+                <div className='flex min-h-full flex-col items-center justify-center'>
+                  <h1 className='text-3xl font-bold text-black'>Borniak</h1>
+                <div>
+                  <div className='pt-10 text-black'>
+                  Website design for renewal old look, not implemented full funcionality <br /></div>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
+                  <a href="https://github.com/nox29a/borniak"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://borniak.vercel.app/"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          {/* new 2 CARD */}
+          <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
+          <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+            <div className='inset-0'>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-gray-400 border-purple-800'>Nowy</div>
+            <h1 className='text-3xl font-bold text-center mb-8'>Video editor <br /> website</h1>
+              <img className='h-[200px] w-full object-cover' src={EditorWebsite} alt=""></img>
+            <div className='pt-10 text-center'>
+            It's a copy of this website, <br/>
+            added translation for polish people 
+            and new look.</div> 
+            
+            
+            </div>
+            
+              <div className='absolute inset-0 h-full-w-full rounded-xl bg-white/90 px-12 text-center text-stale-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'> 
+                <div className='flex min-h-full flex-col items-center justify-center'>
+                  <h1 className='text-3xl font-bold text-black'>Personal video website</h1>
+                <div>
+                  <div className='pt-10 text-black'>
+                  I also working with videos and graphics.<br /></div>
+                  <div className='flex flex-row justify-between mt-10 gap-10'>
+                  <a href="https://github.com/nox29a/editor"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Github} alt="github"></img></a>
+                    <a href="https://editor-nox.vercel.app/"><img className='max-w-[40px] max-h-[40px] cursor-pointer' src={Vercel} alt="vercel"></img></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     {/* FIRST CARD */}
       <div  data-aos="flip-right" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
