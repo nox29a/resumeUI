@@ -161,6 +161,7 @@ const Portfolio = () => {
             <h1 className='text-3xl font-bold text-center  mb-8'>My design <br />portfolio site</h1>
               <img className='h-[200px] w-full object-cover' src="http://nox29a.pythonanywhere.com/static/assets/img/djanogsite.PNG" alt=""></img>
               <div className='pt-10 text-center'>
+        - Python <br />
                   - Bootstrap <br />
                   - Django <br /></div>
             </div>
