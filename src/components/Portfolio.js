@@ -17,7 +17,7 @@ const Portfolio = () => {
         <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-yellow-400 border-purple-800'>Nowy</div>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-yellow-400 border-purple-800'>new</div>
             <h1 className='text-3xl font-bold text-center mb-8'>Project for client</h1>
               <img className='h-[200px] w-full object-cover' src={BorniakShop} alt=""></img>
             <div className='pt-10 text-center'>
@@ -47,7 +47,7 @@ const Portfolio = () => {
           <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-gray-400 border-purple-800'>Nowy</div>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 bg-gray-400 border-purple-800'>new</div>
             <h1 className='text-3xl font-bold text-center mb-8'>Video editor <br /> website</h1>
               <img className='h-[200px] w-full object-cover' src={EditorWebsite} alt=""></img>
             <div className='pt-10 text-center'>
@@ -128,7 +128,7 @@ const Portfolio = () => {
       <div data-aos="flip-left" className='group w-72 sm:w-96 h-[500px] [perspective:1000px]'>
           <div className='bg-hero h-full border-2 border-purple-700 rounded-lg p-8 flex flex-col items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='inset-0'>
-    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 border-purple-800'>Nowy</div>
+    <div className='absolute text-purple-800 text-[12px] font-extrabold uppercase top-4 right-4 px-2 rounded-full z-10 border-2 border-purple-800'>new</div>
             <h1 className='text-3xl font-bold text-center mb-8'>Paintings shop</h1>
               <img className='h-[200px] w-full object-cover' src={PaintingShop} alt=""></img>
             <div className='pt-10 text-center'>
