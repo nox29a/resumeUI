@@ -1,21 +1,33 @@
-import React from 'react';
-import Portret from '../img/portret.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+import React, { useState, useEffect } from "react";
+
+
 const About = () => {
+  const [number, setNumber] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Zwiększaj liczbę o 1 przy każdym odświeżeniu
+      setNumber((prevNumber) => prevNumber + 1);
+    }, 10); // Aktualizuj co sekundę
+
+    // Oczyść interwał, aby uniknąć wycieków pamięci
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
-  <div id="About" className=' pt-32'>
-    <div className='grid place-items-center'>
-      <div className='container mx-auto'>
-        <h1 data-aos="flip-down" className='text-[90px] text-center p-8 gap-4'>About</h1>
-            <div className='text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-8 gap-20'>
-              <p data-aos="fade-right" className='bg-hero border-2 border-purple-700 text-xl rounded-lg p-8 '><img src={Portret} alt='portret' className='w-fit' /></p>
-              <p data-aos="fade-right" className='bg-hero border-2 border-purple-700 text-xl rounded-lg p-8 '>I'm excited to be starting my journey in web development. While I may not have any professional experience yet, I am passionate about learning and developing my skills in this field.</p>
-              <p data-aos="fade-left" className='justify-end bg-hero border-2 border-purple-700 text-xl  rounded-lg p-8 '>I recently completed a FreeCodeCamp Course, where I earned some certifications. Since then, I've been building my own projects, experimenting with different technologies, and staying up-to-date with the latest trends in web development.</p>
-            </div>
-      </div>
+  <div id="About" className=' h-fit bg-black rounded-3xl -mt-5 p-1 pb-12  ">'>
+    <h1 className='lg:p-52 p-20 flex justify-center top-0 text-white text-4xl'>Title </h1>
+    <section className='bg-third m-5 relative rounded-3xl h-full'>
+    <div className='prose'>
+      
+      <h1 className='p-10 flex justify-center'>
+      <span>{number}</span>
+       </h1>
     </div>
+    </section>
+
+
   </div>
   )
 };

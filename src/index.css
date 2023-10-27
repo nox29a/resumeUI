@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-slate-200 font-primary text-primary text-xl;
+    @apply bg-slate-200 font-primary text-primary text-xl ;
   }
   .section {
     @apply pt-[100px] pb-[0] lg:py-[100px];

@@ -18,14 +18,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#1831AD',
+        primary: '#219ebc',
+        secondary: '#ffb703',
         accent: {
-          DEFAULT: '#74AD45',
-          hover: '#83FA23',
+          DEFAULT: '#023047',
+          hover: '#8ecae6d',
         },
-        secondary: '#00AD1A',
-        certification: '#B5CBE0',
-        body: '#F8C7B6',
+        third: '#F4F4F4',
+        body: '#F811B6',
+        custom: '#023047',
       },
       backgroundImage: {
         hero: "url('./img/herobg.png')",
@@ -61,6 +62,9 @@ module.exports = {
       }
     },
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-debug-screens'),
+  ]
 		
 };
